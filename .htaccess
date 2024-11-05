@@ -1,0 +1,13 @@
+
+RewriteEngine On
+RewriteBase /cinetech/
+
+# If the requested file or directory exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Send all requests to index.php for further handling
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+# Custom 404 Error Page
+ErrorDocument 404 /cinetech/App/Views/404.php

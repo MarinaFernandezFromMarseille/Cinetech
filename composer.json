@@ -1,0 +1,5 @@
+{
+    "require": {
+        "jadempinky/pinkyflow": "dev-main"
+    }
+}

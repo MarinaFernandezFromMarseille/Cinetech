@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "7ee2376e3cb7b7bb9861450ced91c1f6",
+    "packages": [
+        {
+            "name": "jadempinky/pinkyflow",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jadempinky/PinkyFlow.git",
+                "reference": "1b221b7d2ba50196eea7cc144681334e798313f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jadempinky/PinkyFlow/zipball/1b221b7d2ba50196eea7cc144681334e798313f5",
+                "reference": "1b221b7d2ba50196eea7cc144681334e798313f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "documentation": {
+                    "usage": "To use the framework, include it in your PHP file and initialize the necessary modules based on your requirements. Example: `$user = new PinkyFlow\\Modules\\User();`.",
+                    "configuration": "Edit the `config/config.php` to define your database connection, API keys, or other settings needed by the modules.",
+                    "customization": "You can extend any module in the `src/Modules` directory by adding your own custom modules. Ensure that custom modules follow PSR-4 standards and are placed within the correct namespace."
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PinkyFlow\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jadempinky",
+                    "email": "jadempinky@gmail.com"
+                }
+            ],
+            "description": "A PHP framework that makes your code flow like water. PinkyFlow provides essential modules like user management, shopping cart, and commenting, while maintaining flexibility for custom extensions.",
+            "support": {
+                "issues": "https://github.com/Jadempinky/PinkyFlow/issues",
+                "source": "https://github.com/Jadempinky/PinkyFlow/tree/main"
+            },
+            "time": "2024-10-21T08:17:25+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "jadempinky/pinkyflow": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
