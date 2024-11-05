@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #000000;
+    padding: 1vw;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+   font-size: medium;
+
+}
