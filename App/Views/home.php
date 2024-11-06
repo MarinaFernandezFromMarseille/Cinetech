@@ -49,36 +49,45 @@
  
   <script src = "Assets/JS/carousel.js"></script>
 
-  <section class = "les_mieux_notés">
+  <section class="les_mieux_notés">
     <h1>Les mieux notés</h1>
-    <?php
-$apiKey = '70d375e0eac50893924ca1b0f38c5d1d';
-$endpoint = "https://api.themoviedb.org/3/movie/popular?api_key=$apiKey";
+    
+    <!-- Flèche de gauche -->
+    <button class="carousel-btn left-btn">←</button>
+    
+    <!-- Carousel -->
+    <section class="carousel2">
+        <div class="films">
+            <?php
+            $apiKey = '70d375e0eac50893924ca1b0f38c5d1d';
+            $endpoint = "https://api.themoviedb.org/3/movie/popular?api_key=$apiKey";
 
-// Initialisation de cURL
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $endpoint);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            // Initialisation de cURL
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $endpoint);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-// Exécution de la requête
-$response = curl_exec($ch);
-curl_close($ch);
+            // Exécution de la requête
+            $response = curl_exec($ch);
+            curl_close($ch);
 
-// Décodage et affichage des données
-$data = json_decode($response, true);
-foreach ($data['results'] as $movie) {
-    $posterPath = 'https://image.tmdb.org/t/p/w500' . $movie['backdrop_path'];
-    echo '<section class = "film">' . "<br>";
-    echo $movie['title'] . "<br>";
-    echo '<img class = "film_img" src="' . $posterPath . '" alt="' . $movie['title'] . '"/>' . "<br>";
-    echo $movie['release_date'] . "<br>";
-    echo '</section>' . "<br>";
-
-}                                                           
-?>
-
-
+            // Décodage et affichage des données
+            $data = json_decode($response, true);
+            foreach ($data['results'] as $movie) {
+                $posterPath = 'https://image.tmdb.org/t/p/w500' . $movie['backdrop_path'];
+                echo '<div class="film">';
+                echo '<h2>' . htmlspecialchars($movie['title']) . '</h2>';
+                echo '<img class="film_img" src="' . htmlspecialchars($posterPath) . '" alt="' . htmlspecialchars($movie['title']) . '"/>';
+                echo '<p>' . htmlspecialchars($movie['release_date']) . '</p>';
+                echo '</div>';
+            }
+            ?>
+        </div>
     </section>
+    
+    <!-- Flèche de droite -->
+    <button class="carousel-btn right-btn">→</button>
+</section>
+<script src = "Assets/JS/carousel.js"></script>
 </body>
 </html>
-
