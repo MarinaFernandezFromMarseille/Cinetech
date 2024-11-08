@@ -78,7 +78,7 @@
                 echo '<div class="film">';
                 echo '<h2>' . htmlspecialchars($movie['title']) . '</h2>';
                 echo '<img class="film_img" src="' . htmlspecialchars($posterPath) . '" alt="' . htmlspecialchars($movie['title']) . '"/>';
-                echo '<p>' . htmlspecialchars($movie['release_date']) . '</p>';
+                echo '<p>' . htmlspecialchars($movie['crew']) . '</p>';
                 echo '</div>';
             }
             ?>
@@ -88,6 +88,14 @@
     <!-- Flèche de droite -->
     <button class="carousel-btn right-btn">→</button>
 </section>
-<script src = "Assets/JS/carousel.js"></script>
+<script src = "Assets/JS/carousel.js?t=<?php echo time(); ?>"></script>
+
+<?php 
+foreach ($data['results'] as $movie) {
+  foreach ($movie as $key => $value) {
+    echo "$key: $value<br>";
+  }
+}
+?>
 </body>
 </html>

@@ -41,21 +41,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     function nextMovieSlide() {
         console.log('Current movie slide : ' + currentmovieSlide);
-        currentmovieSlide = (currentmovieSlide + 1) % movies.length;
+        currentmovieSlide = (currentmovieSlide + 1) % (movies.length / 2);
         console.log('Movie slide after change : ' + currentmovieSlide);
         showMovieSlide(currentmovieSlide);
     }
 
     function prevMovieSlide() {
         console.log('Current movie slide : ' + currentmovieSlide);
-        currentmovieSlide = (currentmovieSlide - 1 + movies.length) % movies.length;
+        currentmovieSlide = (currentmovieSlide - 1 + (movies.length / 2)) % (movies.length / 2) ;
         showMovieSlide(currentmovieSlide);
     }
 
     function showMovieSlide(index) {
         const movieCarousel = document.querySelector('.films');
         currentmovieSlide = index;
-        const offset = -currentmovieSlide * 100; // Calcule la position de la nouvelle image
+        const offset = -currentmovieSlide * 10; // Calcule la position de la nouvelle image
         movieCarousel.style.transform = `translateX(${offset}%)`; // Déplace les images
         console.log('Offset : ' + offset + 'Current movie slide : ' + currentmovieSlide);
     }

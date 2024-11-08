@@ -1,6 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-   
+   font-family: Arial, sans-serif;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   width: 100vw;
+   background-color: rgb(128, 128, 128);
 }
     
 
@@ -47,8 +52,9 @@ nav a {
   }
   
   .carousel {
+    margin-top: 5vw;
     display: flex;
-    width: 100%;
+    
   }
   
   .carousel-images {
@@ -137,14 +143,39 @@ nav a {
 .les_mieux_notés {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5vw;
     background-color: #960000;
     padding: 2vw;
     position: relative;
-    overflow: hidden;
-    width: 30%;
-    height: 20vw;
+    overflow-x: hidden;
+}
+.film {
+    flex: 0 0 20%;
+    max-width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 1vw;
 }
 
+.film:hover {
+    transform: translateY(-0.5vw);
+    box-shadow: 0 0 1.5vw rgba(0, 0, 0, 0.3);
+}
+
+.film_img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 .carousel2 {
     height: 100%;
     width: 100%;
@@ -166,28 +197,7 @@ nav a {
 }
 
 
-.film {
-    flex: 0 0 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    color: rgb(0, 0, 0);
-    border-radius: 1vw;
-    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
 
-.film:hover {
-    transform: translateY(-0.5vw);
-}
-
-.film_img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 0.5vw;
-}
 
 /* Boutons pour faire défiler le carousel */
 .carousel-btn {
