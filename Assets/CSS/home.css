@@ -149,6 +149,10 @@ nav a {
     position: relative;
     overflow-x: hidden;
 }
+
+h1 {
+    color: #fff;
+}
 .film {
     flex: 0 0 20%;
     max-width: 15vw;
@@ -163,6 +167,7 @@ nav a {
     overflow-x: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 1vw;
+    padding: 1vw;
 }
 
 .film:hover {

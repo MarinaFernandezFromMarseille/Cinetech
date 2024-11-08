@@ -50,7 +50,7 @@
   <script src = "Assets/JS/carousel.js"></script>
 
   <section class="les_mieux_notés">
-    <h1>Les mieux notés</h1>
+    <h1>⭐Les mieux notés</h1>
     
     <!-- Flèche de gauche -->
     <button class="carousel-btn left-btn">←</button>
@@ -76,9 +76,9 @@
             foreach ($data['results'] as $movie) {
                 $posterPath = 'https://image.tmdb.org/t/p/w500' . $movie['backdrop_path'];
                 echo '<div class="film">';
-                echo '<h2>' . htmlspecialchars($movie['title']) . '</h2>';
+              
                 echo '<img class="film_img" src="' . htmlspecialchars($posterPath) . '" alt="' . htmlspecialchars($movie['title']) . '"/>';
-                echo '<p>' . htmlspecialchars($movie['crew']) . '</p>';
+               echo '<h2>' . htmlspecialchars($movie['title']) . '</h2>';
                 echo '</div>';
             }
             ?>
@@ -90,12 +90,5 @@
 </section>
 <script src = "Assets/JS/carousel.js?t=<?php echo time(); ?>"></script>
 
-<?php 
-foreach ($data['results'] as $movie) {
-  foreach ($movie as $key => $value) {
-    echo "$key: $value<br>";
-  }
-}
-?>
 </body>
 </html>
