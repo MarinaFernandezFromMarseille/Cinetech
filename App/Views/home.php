@@ -7,23 +7,12 @@
     <link rel="stylesheet" href="Assets/CSS/home.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <nav>
-        <a href="https://github.com/MarinaFernandezFromMarseille/Cinetech">GitHub</a>
-        <a href="https://82.165.185.52:8443/smb/web/view">Plesk</a>
-<form class = "search-form" action="" method="get">
-    <input type="text" name="query" placeholder="Search..." required>
-    <a href = #>Se connecter</a>
-    <a href = #>S'inscrire</a>
-</form>
+   
+<?php
 
-    </nav>
-    <nav class = "navbar2">
-        <a href = #>CINETECH</a>
-        <a href = #>Films</a>
-        <a href = #>Séries</a>
+require './App/Views/_nav.php';
 
-    </nav>
-
+?>
     
   <section id="carousel-section">
     <div class="carousel">
@@ -88,6 +77,10 @@
     <!-- Flèche de droite -->
     <button class="carousel-btn right-btn">→</button>
 </section>
+
+
+
+
 <script src = "Assets/JS/carousel.js?t=<?php echo time(); ?>"></script>
 
 </body>
