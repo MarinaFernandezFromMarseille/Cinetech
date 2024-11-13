@@ -17,7 +17,7 @@
 <form class = "search-form" action="" method="get">
     <input type="text" name="query" placeholder="Search..." required>
     <a href="login.php">Se connecter</a>
-    <a href = #>S'inscrire</a>
+    <a href = "sign_in.php">S'inscrire</a>
 </form>
 
     </nav>

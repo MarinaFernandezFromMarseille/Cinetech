@@ -1,3 +1,32 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
+    header("Location: login.php");
+    exit;
+}
+
+$firstname = $_SESSION['firstname'];
+
+// Affichage du message de bienvenue si l'indicateur est présent
+if (isset($_SESSION['welcome_message']) && $_SESSION['welcome_message']) {
+    echo "<h1>Bonjour, " . htmlspecialchars($firstname) . " !</h1>";
+    unset($_SESSION['welcome_message']); // Supprimer l’indicateur après affichage
+}
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body>
+    <!-- Autres contenus de la page d'accueil -->
+</body>
+</html>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -6,9 +6,9 @@ class Database {
 
     private function __construct() {
         $host = 'localhost';
-        $db = 'nom_de_la_base';
-        $user = 'nom_utilisateur';
-        $pass = 'mot_de_passe';
+        $db = 'cinetech';
+        $user = 'root';
+        $pass = '';
         $charset = 'utf8mb4';
 
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
