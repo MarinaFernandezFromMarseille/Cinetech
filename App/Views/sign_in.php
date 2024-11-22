@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Créer un compte</h1>
-<form class="register-form" method="POST" action="/auth/register">
+<form class="register-form" method="POST">
     <input type="text" name="first_name" placeholder="Prénom" required>
     <input type="text" name="last_name" placeholder="Nom" required>
     <input type="email" name="email" placeholder="Email" required>

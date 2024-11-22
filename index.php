@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/vendor/jadempinky/pinkyflow/PinkyFlow.php';
+
 // Get the requested URI
 $request = $_SERVER['REQUEST_URI'];
 

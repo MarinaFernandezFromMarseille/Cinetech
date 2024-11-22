@@ -1,12 +1,4 @@
 <?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-    // Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
-    header("Location: login.php");
-    exit;
-}
-
-$firstname = $_SESSION['firstname'];
 
 // Affichage du message de bienvenue si l'indicateur est présent
 if (isset($_SESSION['welcome_message']) && $_SESSION['welcome_message']) {
