@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'api_key' => '70d375e0eac50893924ca1b0f38c5d1d',
+    'api_key' => 'cb5b4d9e55721b38a4fb8f7988f5a804',
     'base_url' => 'https://api.themoviedb.org/3/'
 ];
