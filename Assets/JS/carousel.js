@@ -1,11 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     let currentSlide = 0;
-    let currentmovieSlide = 0;
     const leftBtn = document.querySelector('.left-btn');
     const rightBtn = document.querySelector('.right-btn');
 
-    leftBtn.addEventListener('click', prevMovieSlide);
-    rightBtn.addEventListener('click', nextMovieSlide);
     const slides = document.querySelectorAll('.carousel-item');
     const indicators = document.querySelectorAll('.indicator');
     const movies = document.querySelectorAll('.film');
@@ -34,29 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // Initialiser le carrousel en affichant la première image
     showSlide(currentSlide);
-    showMovieSlide(currentmovieSlide);
     // Défilement automatique des images toutes les 5 secondes
     setInterval(nextSlide, 5000);
-    setInterval(nextMovieSlide, 5000);
 
-    function nextMovieSlide() {
-        console.log('Current movie slide : ' + currentmovieSlide);
-        currentmovieSlide = (currentmovieSlide + 1) % (movies.length / 2);
-        console.log('Movie slide after change : ' + currentmovieSlide);
-        showMovieSlide(currentmovieSlide);
-    }
-
-    function prevMovieSlide() {
-        console.log('Current movie slide : ' + currentmovieSlide);
-        currentmovieSlide = (currentmovieSlide - 1 + (movies.length / 2)) % (movies.length / 2) ;
-        showMovieSlide(currentmovieSlide);
-    }
-
-    function showMovieSlide(index) {
-        const movieCarousel = document.querySelector('.films');
-        currentmovieSlide = index;
-        const offset = -currentmovieSlide * 10; // Calcule la position de la nouvelle image
-        movieCarousel.style.transform = `translateX(${offset}%)`; // Déplace les images
-        console.log('Offset : ' + offset + 'Current movie slide : ' + currentmovieSlide);
-    }
 });
