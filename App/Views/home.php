@@ -27,13 +27,13 @@ require './App/Views/_nav.php';
     <div class="carousel">
       <div class="carousel-images">
         <div class="carousel-item active">
-          <img src="Assets/Images/animes.jpeg" alt="Image 1 description">
+          <img src="Assets/Images/124666.webp" alt="Image 1 description">
         </div>
         <div class="carousel-item">
-          <img src="Assets/Images/téléchargé.jpeg" alt="Image 2 description">
+          <img src="Assets/Images/Affiches2711.jpg" alt="Image 2 description">
         </div>
         <div class="carousel-item">
-          <img src="Assets/Images/films2024.jpeg" alt="Image 3 description">
+          <img src="Assets/Images/Affiches3010.jpg" alt="Image 3 description">
         </div>
       </div>
 
@@ -48,19 +48,19 @@ require './App/Views/_nav.php';
 
   <section class="films-container">
     <section class="les_mieux_notés">
-      <h1>Populaires</h1>
+      <h1>Populaires 🍿</h1>
       <!-- Carousel -->
       <section class="carousel2"> <div class="films"> <?php
 
       // Décodage et affichage des données
       foreach ($popularMovies['results'] as $movie) {
         $rating = $movie['vote_average'];
-        $posterPath = 'https://image.tmdb.org/t/p/w500' . $movie['backdrop_path'];
+        $posterPath = 'https://image.tmdb.org/t/p/original' . $movie['poster_path'];
         echo '<div class="film">';
 
         echo '<div class="rating">'."⭐" . $rating . '</div>';
         echo '<img class="film_img" src="' . htmlspecialchars($posterPath) . '" alt="' . htmlspecialchars($movie['title']) . '"/>';
-        echo '<h2>' . htmlspecialchars($movie['title']) . '</h2>';
+      
         echo '</div>';
       }
       ?>
@@ -69,7 +69,7 @@ require './App/Views/_nav.php';
   </section>
 
   <section class="les_mieux_notés">
-    <h1>Les mieux notés</h1>
+    <h1>Les mieux notés 🍿</h1>
 
    
 
@@ -79,12 +79,12 @@ require './App/Views/_nav.php';
     // Décodage et affichage des données
     foreach ($topRatedMovies['results'] as $movie) {
       $rating = $movie['vote_average'];
-      $posterPath = 'https://image.tmdb.org/t/p/w500' . $movie['backdrop_path'];
+      $posterPath = 'https://image.tmdb.org/t/p/original' . $movie['poster_path'];
       echo '<div class="film">';
 
       echo '<div class="rating">'."⭐" . $rating . '</div>';
       echo '<img class="film_img" src="' . htmlspecialchars($posterPath) . '" alt="' . htmlspecialchars($movie['title']) . '"/>';
-      echo '<h2>' . htmlspecialchars($movie['title']) . '</h2>';
+    
       echo '</div>';
     }
     ?>
@@ -93,7 +93,7 @@ require './App/Views/_nav.php';
   </section>
 
   <section class="les_mieux_notés">
-    <h1>A venir</h1>
+    <h1>A venir 🍿</h1>
 
     <!-- Carousel -->
     <section class="carousel2"> <div class="films"> <?php
@@ -101,12 +101,12 @@ require './App/Views/_nav.php';
     // Décodage et affichage des données
     foreach ($upComingMovies['results'] as $movie) {
       $rating = $movie['vote_average'];
-      $posterPath = 'https://image.tmdb.org/t/p/w500' . $movie['backdrop_path'];
+      $posterPath = 'https://image.tmdb.org/t/p/original' . $movie['poster_path'];
       echo '<div class="film">';
 
       echo '<div class="rating">'."⭐" . $rating . '</div>';
       echo '<img class="film_img" src="' . htmlspecialchars($posterPath) . '" alt="' . htmlspecialchars($movie['title']) . '"/>';
-      echo '<h2>' . htmlspecialchars($movie['title']) . '</h2>';
+  
       echo '</div>';
     }
     ?>
@@ -118,7 +118,7 @@ require './App/Views/_nav.php';
 
 
   <section class="les_mieux_notés">
-    <h1>En ce moment</h1>
+    <h1>En ce moment 🍿</h1>
 
     <!-- Carousel -->
     <section class="carousel2"> <div class="films"> <?php
@@ -126,14 +126,14 @@ require './App/Views/_nav.php';
     // Décodage et affichage des données
     foreach ($nowPlayingMovies['results'] as $movie) {
       $rating = $movie['vote_average'];
-      $posterPath = 'https://image.tmdb.org/t/p/w500' . $movie['backdrop_path'];
+      $posterPath = 'https://image.tmdb.org/t/p/original' . $movie['poster_path'];
       echo '<div class="film">';
 
       echo '<div class="rating">';
       echo '<div class = "note">' .'⭐'. $rating . '</div>';
       echo '</div>';
       echo '<img class="film_img" src="' . htmlspecialchars($posterPath) . '" alt="' . htmlspecialchars($movie['title']) . '"/>';
-      echo '<h2>' . htmlspecialchars($movie['title']) . '</h2>';
+   
       echo '</div>';
     }
     ?>
