@@ -16,9 +16,20 @@
         <a href="https://82.165.185.52:8443/smb/web/view">Plesk</a>
 <form class = "search-form" action="" method="get">
     <input type="text" name="query" placeholder="Search..." required>
-    <a href="login.php">Se connecter</a>
-    <a href = "sign_in.php">S'inscrire</a>
-</form>
+    </form>
+    <?php
+    if ($user->isLoggedIn()) {
+        ?>
+        <a href = "profile.php"><img class = "profil_icon" src="Assets/Images/utilisateur.png" alt="profil_icon"></a>
+        <?php
+    } else {
+        ?>
+        <a href="login.php">Se connecter</a>
+        <a href = "sign_in.php">S'inscrire</a>
+        <?php
+    }
+    ?>
+
 
     </nav>
     <nav class = "navbar2">

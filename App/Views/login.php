@@ -10,10 +10,9 @@
     <title>LOGIN</title>
 </head>
 <body>
-    <?php require './App/Views/_nav.php'; ?>
 
 
-<h1>Connecte-toi Bitch!</h1>
+<h1>Connexion </h1>
     
 <form class = "login-form" method="POST">
     <input type="text" name="username" placeholder="Nom d'utilisateur" required>

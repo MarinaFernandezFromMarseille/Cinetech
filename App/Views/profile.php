@@ -10,13 +10,13 @@
 </head>
 <body>
     <div class="profile-container">
-        <form action="update_profile.php" method="POST" class="profile-form">
+        <form  method="POST" class="profile-form">
             <div class="profile-header">
                 <h1 class="profile-username">Bonjour, <?php echo $user->getUsername(); ?></h1>
                 <p class="profile-email"><?php echo $user->getEmail(); ?></p>
             </div>
             <div class="profile-actions">
-                <button type="submit" class="btn save-btn">Enregistrer les modifications</button>
+                <button type="submit" name="edit" class="btn save-btn">Enregistrer les modifications</button>
 
         </div>
             <div class="profile-details">
@@ -31,9 +31,10 @@
         <?php
                 // Handle logout
         if ($user->isLoggedIn()) {
-            echo '<form action="' . $_SERVER['PHP_SELF'] . '" method="post"><button type="submit" name="logout">Logout</button></form>';
+            echo '<form method="post"><button type="submit" name="logout">Logout</button></form>';
         }
         ?>
+        <a href="home.php">Retour à l'accueil</a>
     </div>
 </body>
 </html>

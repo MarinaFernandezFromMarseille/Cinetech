@@ -159,6 +159,11 @@ class User {
         $stmt->execute(['email' => $email, 'uid' => $this->uid]);
     }
 
+    public function setUsername($username) {
+        $stmt = $this->db->prepare("UPDATE `{$this->table}` SET `username` = :username WHERE `uid` = :uid");
+        $stmt->execute(['username' => $username, 'uid' => $this->uid]);
+    }
+
     public function setLastLogin() {
         $stmt = $this->db->prepare("UPDATE `{$this->table}` SET `last_login` = CURRENT_TIMESTAMP WHERE `uid` = :uid");
         $stmt->execute(['uid' => $this->uid]);
