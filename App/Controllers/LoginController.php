@@ -2,7 +2,7 @@
 
 
 if ($user->isLoggedIn()) {
-    header("Location: home");
+    header("Location: profile");
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

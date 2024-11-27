@@ -8,6 +8,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
 
 
-    $user->register($username, $password, $confirmPassword, $email);        
+    $user->register($username, $password, $confirmPassword, $email);       
+    
+    // Redirection vers login.php
+    header('Location: login');
+    exit(); // S'assurer que le script s'arrête après la redirection
+} 
 
-}
