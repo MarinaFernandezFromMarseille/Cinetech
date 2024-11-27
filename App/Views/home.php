@@ -146,9 +146,11 @@ require './App/Views/_nav.php';
 
 
 
+  <?php
+require './App/Views/_footer.php';
 
+?>
   <script src="Assets/JS/carousel.js?t=<?php echo time(); ?>"></script>
-
   </body>
 
 </html>
