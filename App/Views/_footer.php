@@ -10,6 +10,11 @@
 
 <body>
     <footer>
+        <div class = "logo2">
+            <div class = "logo">
+        <img src = "Assets/Images/logocinetech.webp" alt = "logo">
+            </div>
+        </div>
         <section class = "colonne">
         <ul>
             <li><a href="https://github.com/MarinaFernandezFromMarseille/Cinetech">GitHub</a></li>
@@ -30,11 +35,15 @@
         </section>
 
         <section class = "colonne">
-        <ul>
+        <>
             <li><a href="#"><img class = "icon" src = "Assets/Images/git.png" alt = "logo"></a></li>
             <li><a href="#"><img class = "icon" src = "Assets/Images/instagram.png" alt = "logo"></a></li>
             <li><a href="#"><img class = "icon" src = "Assets/Images/social.png" alt = "logo"></a></li>
-        </ul>
+</ul>
+        </section>
+
+        <p>© 2023 Cinetech. Tous droits réservés.</p>
+        
 
     </footer>
 

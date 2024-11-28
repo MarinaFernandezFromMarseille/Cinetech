@@ -16,6 +16,10 @@
     <input type="password" name="confirm_password" placeholder="Confirmer mot de passe" required>
     <button type="submit">S'inscrire</button>
 </form>
+<section class = "links">
+<a href = "home.php">Retour à l'accueil</a>
+<a href = "login.php">J'ai déjà un compte</a>
+</section>
    
 </body>
 </html>

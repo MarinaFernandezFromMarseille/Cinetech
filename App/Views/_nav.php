@@ -12,6 +12,7 @@
 </html>
 
 <nav>
+        <img class = "logo" src="Assets/Images/logocinetech.webp" alt="logo">
         <a href="https://github.com/MarinaFernandezFromMarseille/Cinetech">GitHub</a>
         <a href="https://82.165.185.52:8443/smb/web/view">Plesk</a>
 <form class = "search-form" action="" method="get">
@@ -33,7 +34,6 @@
 
     </nav>
     <nav class = "navbar2">
-        <a href = #>CINETECH</a>
         <select>
             <option value="films0">Series</option>
             <option value="films1">Horreur</option>

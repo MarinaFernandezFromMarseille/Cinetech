@@ -19,6 +19,24 @@ a {
 }
 
 .icon {
-  width: 2vw;
-  height: 2vw;
+  width: 5vw;
+ 
+}
+
+.logo2 {
+  position: relative;
+}
+
+.logo2 img {
+  position:absolute;
+  top: 2vw;
+  left: 0.5vw;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 1vw;
+}
+
+p {
+  color: #fff;
+  font-size: x-small;
 }

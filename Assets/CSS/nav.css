@@ -39,3 +39,9 @@ nav a {
     margin-left: 30vw;
  
 }
+
+.logo {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 1vw;
+}

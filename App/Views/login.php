@@ -19,6 +19,10 @@
     <input type="password" name="password" placeholder="Mot de passe" required>
     <button type="submit">Connexion</button>
 </form>
+<section class = "links">
+<a href = "home.php">Retour à l'accueil</a>
+<a href = "sign_in.php">Créer un compte</a>
+</section>
 
 </body>
 </html>
