@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="Assets/CSS/nav.css?v=<?php echo time(); ?>">
-    <title>nav</title>
-</head>
-<body>
-    
-</body>
-</html>
 
 <nav>
         <img class = "logo" src="Assets/Images/logocinetech.webp" alt="logo">
@@ -80,3 +68,5 @@
         </select>
 
     </nav>
+    </body>
+    </html>

@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ff5555;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 62.5vw; /* 1200px / 1920 * 100 */
+    margin: 0 auto;
+    padding: 1.04vw; /* 20px / 1920 * 100 */
+}
+
+h1 {
+    font-size: 6.51vw; /* 125px / 1920 * 100 */
+    color: #ff5555;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.04vw; /* 20px / 1920 * 100 */
+    -webkit-text-stroke: 0.05vw black; /* 1px / 1920 * 100 */
+}
+
+h2 {
+    color: #ff5555;
+    text-transform: uppercase;
+    margin-bottom: 0.78vw; /* 15px / 1920 * 100 */
+}
+
+/* Movie Info Section */
+.movie-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.04vw; /* 20px / 1920 * 100 */
+    background-color: #292929;
+    padding: 1.04vw; /* 20px / 1920 * 100 */
+    border-radius: 0.52vw; /* 10px / 1920 * 100 */
+    box-shadow: 0 0.21vw 0.52vw rgba(165, 3, 3, 0.5); /* 4px, 10px / 1920 */
+}
+
+.poster-container {
+    flex: 1 1 15.62vw; /* 300px / 1920 * 100 */
+    text-align: center;
+}
+
+.poster {
+    width: 100%;
+    border-radius: 0.52vw; /* 10px / 1920 * 100 */
+    box-shadow: 0 0.21vw 0.42vw rgba(0, 0, 0, 0.5); /* 4px, 8px / 1920 */
+}
+
+.watchlist-button {
+    background-color: transparent;
+    color: #ff5555;
+    border: none;
+    font-size: 1.04vw; /* 20px / 1920 * 100 */
+    cursor: pointer;
+    margin-top: 0.52vw; /* 10px / 1920 * 100 */
+}
+
+.watchlist-button:hover {
+    color: white;
+}
+
+.movie-details {
+    flex: 2;
+}
+
+.detail-item {
+    margin-bottom: 0.52vw; /* 10px / 1920 * 100 */
+}
+
+.detail-item strong {
+    color: #ff5555;
+}
+
+/* Overview Section */
+.overview-section {
+    margin-top: 1.56vw; /* 30px / 1920 * 100 */
+    background-color: #292929;
+    padding: 1.04vw; /* 20px / 1920 * 100 */
+    border-radius: 0.52vw; /* 10px / 1920 * 100 */
+}
+
+.overview-section p {
+    font-size: 0.57vw; /* 11px / 1920 * 100 */
+    line-height: 1.56vw; /* 30px / 1920 * 100 */
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 1.56vw; /* 30px / 1920 * 100 */
+    background-color: #292929;
+    padding: 1.04vw; /* 20px / 1920 * 100 */
+    border-radius: 0.52vw; /* 10px / 1920 * 100 */
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 4.17vw; /* 80px / 1920 * 100 */
+    border: none;
+    border-radius: 0.26vw; /* 5px / 1920 * 100 */
+    padding: 0.52vw; /* 10px / 1920 * 100 */
+    font-size: 0.52vw; /* 10px / 1920 * 100 */
+    background-color: #1c1c1c;
+    color: white;
+    resize: none;
+    margin-bottom: 0.52vw; /* 10px / 1920 * 100 */
+}
+
+.comment-form button {
+    background-color: #ff5555;
+    border: none;
+    color: white;
+    padding: 0.52vw 1.04vw; /* 10px, 20px / 1920 * 100 */
+    font-size: 0.52vw; /* 10px / 1920 * 100 */
+    border-radius: 0.26vw; /* 5px / 1920 * 100 */
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #e04444;
+}
+
+.num_comments {
+    margin-bottom: 0.78vw; /* 15px / 1920 * 100 */
+    color: #ff5555;
+}
+
+/* Cast Section */
+.cast-section {
+    margin-top: 1.56vw; /* 30px / 1920 * 100 */
+}
+
+.scrolling-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.04vw; /* 20px / 1920 * 100 */
+    padding: 0.52vw 0; /* 10px / 1920 * 100 */
+}
+
+.scrolling-wrapper .card {
+    flex: 0 0 auto;
+    width: 7.81vw; /* 150px / 1920 * 100 */
+    background-color: #292929;
+    border-radius: 0.52vw; /* 10px / 1920 * 100 */
+    padding: 0.52vw; /* 10px / 1920 * 100 */
+    text-align: center;
+    box-shadow: 0 0.21vw 0.42vw rgba(228, 5, 5, 0.589); /* 4px, 8px / 1920 */
+}
+
+.card img {
+    border-radius: 0.52vw; /* 10px / 1920 * 100 */
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.52vw; /* 10px / 1920 * 100 */
+}
+
+.card-title {
+    font-size: 0.52vw; /* 10px / 1920 * 100 */
+    color: #ff5555;
+}
+
+.card-text {
+    font-size: 0.47vw; /* 9px / 1920 * 100 */
+    color: white;
+}
+
+/* Similar Movies Section */
+.similarmovies-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.04vw; /* 20px / 1920 * 100 */
+    margin-top: 1.56vw; /* 30px / 1920 * 100 */
+}
+
+.similarmovies-section .movie {
+    flex: 1 1 10.42vw; /* 200px / 1920 * 100 */
+    background-color: #292929;
+    border-radius: 0.52vw; /* 10px / 1920 * 100 */
+    text-align: center;
+    padding: 0.78vw; /* 15px / 1920 * 100 */
+    box-shadow: 0 0.21vw 0.42vw rgba(0, 0, 0, 0.5); /* 4px, 8px / 1920 */
+}
+
+.similarmovies-section .movie img {
+    border-radius: 0.52vw; /* 10px / 1920 * 100 */
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.52vw; /* 10px / 1920 * 100 */
+}
+
+.similarmovies-section .movie h2 {
+    font-size: 0.62vw; /* 12px / 1920 * 100 */
+    margin: 0.52vw 0; /* 10px / 1920 * 100 */
+}
+
+.similarmovies-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.similarmovies-section li {
+    color: #ff5555;
+    font-size: 0.47vw; /* 9px / 1920 * 100 */
+}
