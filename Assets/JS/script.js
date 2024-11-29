@@ -35,3 +35,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
     setInterval(nextSlide, 5000);
 
 });
+

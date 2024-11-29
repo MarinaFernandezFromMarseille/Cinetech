@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Assets/CSS/sign_in.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="Assets/CSS/nav.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <h1>Créer un compte</h1>

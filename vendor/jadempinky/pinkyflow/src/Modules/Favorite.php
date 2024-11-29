@@ -7,9 +7,10 @@ class Favorite {
     private $user;
     private $table;
 
-    public function __construct($db, $user) {
+    public function __construct($db, $user, $isshop = false) {
         $this->db = $db;
         $this->user = $user;
+        $this->isshop = $isshop;
         $this->table = 'favorites';
         $this->verifyTable();
     }
@@ -21,8 +22,7 @@ class Favorite {
                 `uid` VARCHAR(255) NOT NULL,
                 `product_id` VARCHAR(255) NOT NULL,
                 `added_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY (`uid`) REFERENCES `users`(`uid`) ON DELETE CASCADE,
-                FOREIGN KEY (`product_id`) REFERENCES `products`(`product_id`) ON DELETE CASCADE
+                FOREIGN KEY (`uid`) REFERENCES `users`(`uid`) ON DELETE CASCADE
             ";
             try {
                 $this->db->createTable($this->table, $options);
@@ -64,6 +64,7 @@ class Favorite {
         if (!$this->user->isLoggedIn()) {
             throw new Exception("User must be logged in to view favorite items.");
         }
+        if ($this->isshop) {
         $uid = $this->user->getUid();
         $stmt = $this->db->prepare("
             SELECT p.*, f.added_at 
@@ -73,6 +74,17 @@ class Favorite {
         ");
         $stmt->execute(['uid' => $uid]);
         return $stmt->fetchAll();
+        } else {
+            if (!$this->user->isLoggedIn()) {
+                throw new Exception("User must be logged in to view favorite items.");
+            }
+            $uid = $this->user->getUid();
+            $stmt = $this->db->prepare("
+                SELECT `product_id` FROM {$this->table} WHERE `uid` = :uid
+            ");
+            $stmt->execute(['uid' => $uid]);
+            return $stmt->fetchAll();
+        }
     }
 
     public function clearFavorites() {
@@ -82,6 +94,16 @@ class Favorite {
         $uid = $this->user->getUid();
         $stmt = $this->db->prepare("DELETE FROM `{$this->table}` WHERE `uid` = :uid");
         $stmt->execute(['uid' => $uid]);
+    }
+
+    public function isFavorite($product_id) {
+        if (!$this->user->isLoggedIn()) {
+            throw new Exception("User must be logged in to check favorite status.");
+        }
+        $uid = $this->user->getUid();
+        $stmt = $this->db->prepare("SELECT `id` FROM `{$this->table}` WHERE `uid` = :uid AND `product_id` = :product_id");
+        $stmt->execute(['uid' => $uid, 'product_id' => $product_id]);
+        return $stmt->fetch() !== false;
     }
 }
 

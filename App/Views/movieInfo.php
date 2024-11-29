@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href="/cinetech/Assets/CSS/movieInfo.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href = "cinetech/Assets/CSS/_nav.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href = "/cinetech/Assets/CSS/nav.css?v=<?php echo time(); ?>">
 </head>
 <body>
 
@@ -22,6 +22,23 @@ require './App/Views/_nav.php';
                 $posterPath = 'https://image.tmdb.org/t/p/w300' . $data['poster_path'];
                 ?>
                 <div class="poster-container">
+                <?php
+                    $idinfo = $type . "-" . $data['id'];
+                if ($user->isLoggedIn() && $favorite->isFavorite($idinfo)) {
+                    $isFavorite = true;
+                    $watchlistIcon = "solid";
+                } else {
+                    $isFavorite = false;
+                    $watchlistIcon = "regular";
+                }
+                echo "<form method='POST'>";
+                echo "<input type='hidden' name='movie_id' value='{$data['id']}' />";
+                echo "<input type='hidden' name='type' value='{$type}' />";
+                echo "<input type='hidden' name='isfavorite' value='{$isFavorite}' />";
+                echo "<button type='submit' name='watchlist' class='watchlist-button'><i class='fa-{$watchlistIcon} fa-star'></i></button>";
+                echo "</form></div>";
+                ?>
+                    </div>
                     <img class="poster" loading="lazy" src="<?php echo $posterPath;?>" alt="Movie Poster">
                     <form method="POST">
                         <input type="hidden" name="movie_id" value="<?php echo $data['id']; ?>">

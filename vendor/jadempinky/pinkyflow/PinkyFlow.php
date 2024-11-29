@@ -7,13 +7,14 @@ use PinkyFlow\Modules\User;
 use PinkyFlow\Modules\Shop;
 use PinkyFlow\Modules\Product;
 use PinkyFlow\Modules\Comment;
+use PinkyFlow\Modules\Favorite;
 
 
 // Load the configuration file
 require_once __DIR__ . '/config/config.php';
 
 function pinkyflow_initialize_globals() {
-    global $db, $user, $shop, $product, $comment;
+    global $db, $user, $shop, $product, $comment, $favorite;
 
     // Initialize the Database if enabled
     if (Config::$enableDatabase) {
@@ -23,6 +24,7 @@ function pinkyflow_initialize_globals() {
     // Initialize the User module if enabled
     if (Config::$enableUserModule) {
         $user = new User($db); // Pass the database object to the User class
+        $favorite = new Favorite($db, $user);
     }
 
     // Initialize the Shopping module if enabled

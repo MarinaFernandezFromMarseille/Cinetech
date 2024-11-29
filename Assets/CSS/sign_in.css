@@ -1,59 +1,86 @@
+/* Styles de base */
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 0;
-    padding:0;
-    background-image: url("../Images/streamin.webp"); ;
+    background-image: url("../Images/streamin.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 215vw;
-   
+    height: 100vh; /* Ajustement pour un écran desktop */
 }
 
 .register-form {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5vw;
+    margin-top: 3vw;
     background-color: #fff;
-    padding: 1vw;
-    border-radius: 5vw;
+    padding: 2vw;
+    border-radius: 2vw;
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
-    border: solid 1px;
-    width: 80vw;
-    height: 80vw;
-    
-    
+    border: solid 1px #ddd;
+    width: 50vw; /* Réduction de la largeur pour un affichage desktop */
+    height: auto; /* Adaptation dynamique de la hauteur */
+}
+
+.register-form input {
+    border-radius: 0.5vw;
+    width: 40vw; /* Plus petit pour s'adapter à un écran desktop */
+    padding: 1vw;
+}
+
+.register-form h1 {
+    color: #000;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-bottom: 1vw;
+}
+
+.register-form .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.register-form a {
+    color: #000;
+    text-decoration: none;
+    margin: 0.5vw;
+    margin-left: 1vw;
+    font-size: 1em;
+}
+
+/* Media queries pour les écrans de PC */
+@media (min-width: 1024px) {
+    body {
+        height: 100vh;
+        padding: 0;
+        background-size: cover;
     }
 
-    input {
-        border: solid 1px;
-        border-radius: 1vw;
-        width: 65vw;
+    .register-form {
+        margin-top: 2vw;
+        width: 30vw; /* Plus étroit sur les écrans larges */
         padding: 2vw;
+        border-radius: 1vw;
     }
 
-    h1 {
-    
-        color: #fff;
-        font-size: xx-large;
-        font-weight: bolder;
+    .register-form input {
+        width: 25vw; /* Plus petit pour s'adapter */
+        padding: 0.8vw;
+        font-size: 1em;
     }
-       
 
-    .links {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .register-form h1 {
+        font-size: 3em;
     }
-    
-    a {
-        color: #fff;
-        text-decoration: none;
-        margin: 1vw;
-        margin-left: 2vw;
+
+    .register-form a {
+        font-size: 1.2em;
+        margin: 0.5vw;
     }
-    
+}

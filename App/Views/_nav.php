@@ -1,6 +1,6 @@
 
 <nav>
-        <img class = "logo" src="Assets/Images/logocinetech.webp" alt="logo">
+        <a href = "/cinetech/home.php"><img class = "logo" src="Assets/Images/logocinetech.webp" alt="logo"></a>
         <a href="https://github.com/MarinaFernandezFromMarseille/Cinetech">GitHub</a>
         <a href="https://82.165.185.52:8443/smb/web/view">Plesk</a>
 <form class = "search-form" action="" method="get">
@@ -13,8 +13,8 @@
         <?php
     } else {
         ?>
-        <a href="login.php">Se connecter</a>
-        <a href = "sign_in.php">S'inscrire</a>
+        <a href="/cinetech/login.php">Se connecter</a>
+        <a href = "/cinetech/sign_in.php">S'inscrire</a>
         <?php
     }
     ?>
