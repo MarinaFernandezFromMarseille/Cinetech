@@ -7,7 +7,6 @@ body {
    width: 100vw;
    background-color: rgb(158, 0, 0);
 }
-    
 
 
 #carousel-section {
@@ -76,7 +75,7 @@ body {
     position: relative;
     overflow-x: hidden;
     background-color: #00000036;
- 
+}
 
 h1 {
     color: #fff;
@@ -90,8 +89,6 @@ h1 {
     overflow-x: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
-   
-   
 }
 
 .film:hover {
@@ -170,4 +167,5 @@ h1 {
   color: black;
 }
 
-}
+
+

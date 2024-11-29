@@ -82,9 +82,10 @@ if (file_exists($viewPath)) {
     }
 } else {
     if (strpos($fullurl, $websitename) !== false) {
-        http_response_code(404);
-        require 'app/Controllers/404Controller.php';
-        require 'App/Views/_404.php';
+        // http_response_code(404);
+        // require 'app/Controllers/404Controller.php';
+        // require 'App/Views/_404.php';
+        echo "404"; 
     }
 }
 

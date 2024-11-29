@@ -9,12 +9,12 @@
     <?php
     if ($user->isLoggedIn()) {
         ?>
-        <a href = "profile.php"><img class = "profil_icon" src="Assets/Images/utilisateur.png" alt="profil_icon"></a>
+        <a href = "profile"><img class = "profil_icon" src="Assets/Images/utilisateur.png" alt="profil_icon"></a>
         <?php
     } else {
         ?>
-        <a href="/cinetech/login.php">Se connecter</a>
-        <a href = "/cinetech/sign_in.php">S'inscrire</a>
+        <a href="/cinetech/login">Se connecter</a>
+        <a href = "/cinetech/sign_in">S'inscrire</a>
         <?php
     }
     ?>

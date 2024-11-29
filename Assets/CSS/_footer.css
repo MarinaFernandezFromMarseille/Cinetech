@@ -3,15 +3,17 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #000000;
-  padding: 1vw;
-  font-size: small;
+  padding: 0.5vw;
 }
 
-.colonne {
+.colonne, .colonne8 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: 10vw;
+  font-size: medium;
 }
+
 
 a {
   color: #fff;
@@ -19,8 +21,7 @@ a {
 }
 
 .icon {
-  width: 5vw;
- 
+  width: 4vw;
 }
 
 .logo2 {
@@ -28,8 +29,8 @@ a {
 }
 
 .logo2 img {
-  position:absolute;
-  top: 2vw;
+  position: absolute;
+  top: 1vw;
   left: 0.5vw;
   width: 15vw;
   height: 15vw;
@@ -39,4 +40,38 @@ a {
 p {
   color: #fff;
   font-size: x-small;
+  margin-top: 7vw;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .colonne {
+   font-size: small;
+  }
+
+  .logo2 img {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  p {
+    margin-top: 3vw;
+    font-size: small;
+
+  }
+
+  .colonne8, p {
+    display: none;
+
+}
+
+.icon {
+  width: 6vw;
+}
+
+
 }

@@ -17,6 +17,7 @@ nav a {
     font-size: 2vw;
     margin: 0.5vw;
 
+
 }
 
 .search-form {
@@ -35,13 +36,19 @@ nav a {
 }
 
 .profil_icon {
-    width: 3.5vw;
-    margin-left: 30vw;
- 
+    width: 5vw;
+    margin-left: 20vw;
 }
 
 .logo {
     width: 10vw;
     height: 10vw;
     border-radius: 1vw;
+}
+
+input {
+    border: solid 1px #0c0000;
+    border-radius: 1vw;
+    width: 30vw;
+    padding: 1vw;
 }

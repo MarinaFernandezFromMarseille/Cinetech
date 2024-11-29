@@ -10,40 +10,43 @@
 
 <body>
     <footer>
-        <div class = "logo2">
-            <div class = "logo">
-        <img src = "Assets/Images/logocinetech.webp" alt = "logo">
+        <div class="logo2">
+            <div class="logo">
+                <img src="Assets/Images/logocinetech.webp" alt="logo">       
+       
             </div>
+             <p>© 2023 Cinetech. Tous droits réservés.</p>
         </div>
-        <section class = "colonne">
-        <ul>
-            <li><a href="https://github.com/MarinaFernandezFromMarseille/Cinetech">GitHub</a></li>
-            <li><a href="https://82.165.185.52:8443/smb/web/view">Plesk</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-        </ul>
+        <section class="colonne">
+            <ul>
+                <li><a href="https://github.com/MarinaFernandezFromMarseille/Cinetech">GitHub</a></li>
+                <li><a href="https://82.165.185.52:8443/smb/web/view">Plesk</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
         </section>
 
-        <section class = "colonne">
-        <ul>
-            <li><a href="#">Mentions legales</a></li>
-            <li><a href="#">Cookies</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Conditions d'utilisation</a></li>
-        </ul>
+        <section class="colonne8">
+            <ul>
+                <li><a href="#">Mentions legales</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+            </ul>
+      
         </section>
 
-        <section class = "colonne">
-        <>
-            <li><a href="#"><img class = "icon" src = "Assets/Images/git.png" alt = "logo"></a></li>
-            <li><a href="#"><img class = "icon" src = "Assets/Images/instagram.png" alt = "logo"></a></li>
-            <li><a href="#"><img class = "icon" src = "Assets/Images/social.png" alt = "logo"></a></li>
-</ul>
+        <section class="colonne">
+            <ul>
+                <li><a href="#"><img class="icon" src="Assets/Images/git.png" alt="logo"></a></li>
+                <li><a href="#"><img class="icon" src="Assets/Images/instagram.png" alt="logo"></a></li>
+                <li><a href="#"><img class="icon" src="Assets/Images/social.png" alt="logo"></a></li>
+            </ul>
+           
         </section>
 
-        <p>© 2023 Cinetech. Tous droits réservés.</p>
-        
+
 
     </footer>
 

@@ -12,13 +12,9 @@
 </head>
 <body>
 
-<?php
-
-require '_nav.php';
-?>  
 
 
-<h1>Connexion </h1>
+<h1>Connexion</h1>
     
 <form class = "login-form" method="POST">
 
