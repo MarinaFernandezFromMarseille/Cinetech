@@ -35,4 +35,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     setInterval(nextSlide, 5000);
 
 });
+const searchBar = document.getElementById('search-bar');
 
+searchBar.addEventListener('click', () => {
+    window.location.href = 'search.html'; // Redirige vers la page dédiée
+});

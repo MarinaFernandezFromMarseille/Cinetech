@@ -7,7 +7,7 @@ if ($type == 'TV') {
 }
 $id = $tags[1];
 
-$apiKey = 'cb5b4d9e55721b38a4fb8f7988f5a804';
+$apiKey = '4d3f62798aad54f0620819930a79fa00';
 $infoUrl = "https://api.themoviedb.org/3/{$type}/{$id}?api_key={$apiKey}&language=en-US&append_to_response=videos,credits,images";
 
 

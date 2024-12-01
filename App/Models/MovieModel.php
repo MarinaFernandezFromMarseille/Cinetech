@@ -1,6 +1,6 @@
 <?php
 class Movie {
-    private $apiKey = 'cb5b4d9e55721b38a4fb8f7988f5a804'; // Remplacez par votre clé API TMDb
+    private $apiKey = '4d3f62798aad54f0620819930a79fa00'; // Remplacez par votre clé API TMDb
 
     /**
      * Récupérer les films populaires
