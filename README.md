@@ -1,228 +1,53 @@
-# Markdown Cheatsheet
+# **CINETECH FILM LIBRARY**
+###### par Fernandez Marina
 
-Markdown is a lightweight markup language for creating formatted text. Below is an example demonstrating all key commands.
+CINETECH est une librairie qui répertorie un grand nombre de films et séries par genre et catégories, ainsi que les infos propres à chaque film comme les casting, le synopsis, ect...
 
----
+# ** PRE-REQUIS POUR CE PROJET
 
-## Headings
-Use `#` for headings:
-```markdown
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-```
-
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+- LARAGON ou autre
+- Composer 
+- Github
 
 ---
 
-## Text Formatting
-You can format text using:
-- **Bold**: `**bold**` or `__bold__`
-- *Italic*: `*italic*` or `_italic_`
-- ~~Strikethrough~~: `~~strikethrough~~`
+# **MARCHE A SUIVRE**
 
-Example:
-```markdown
-**Bold Text**
-*Italic Text*
-~~Strikethrough~~
-```
+ 1.télécharger le repo sur Github
+ 2.Unzip le dossier 
+ 3.l'installer dans www dans un dossier "cinetech"
+ 4.Ouvrir le dossier dans VSCODE et aller dans "vendor/jadempinky/pinkyflow/config"
+ 5.Modifier les caractéristiques de la base de données pour y acceder: 
 
-Output:
-**Bold Text**  
-*Italic Text*  
-~~Strikethrough~~
+**$dbHost = 'localhost';**
+**$dbUser = 'root';**
+**$dbPass = '';**
+**$dbName = 'cinetech';**
 
----
 
-## Lists
+ 6. Tu peux aussi cloner le repo depuis ton terminal:
 
-### Unordered List
-Use `-`, `+`, or `*`:
-```markdown
-- Item 1
-- Item 2
-  - Sub-item 2.1
-  - Sub-item 2.2
-```
-
-- Item 1
-- Item 2
-  - Sub-item 2.1
-  - Sub-item 2.2
-
-### Ordered List
-Use numbers followed by a period:
-```markdown
-1. Item 1
-2. Item 2
-   1. Sub-item 2.1
-   2. Sub-item 2.2
-```
-
-1. Item 1
-2. Item 2
-   1. Sub-item 2.1
-   2. Sub-item 2.2
+   ```bash
+  **git clone https://github.com/ton-utilisateur/nom-du-repository.git**
 
 ---
 
-## Links
-Create links with `[text](URL)`:
-```markdown
-[OpenAI](https://openai.com)
-```
-[OpenAI](https://openai.com)
+# **COMMENT OBTENIR/CHANGER LA CLE API**
+
+1. Créer un compte sur * TMDB* si ce n'est pas déjà fait
+2. Aller dans la section "API" de vos paramètres
+3. Noter la clé affichée et conservez la , et elle est prête à être utilisée! 
+4. Pour la changer, simplement cliouer sur "régénérer la clé"
 
 ---
 
-## Images
-Insert images using `![alt text](URL)`:
-```markdown
-![OpenAI Logo](https://openai.com/favicon.ico)
-```
+# **CE QUE L'ON PEUT FAIRE SUR LE SITE**
 
-![OpenAI Logo](https://openai.com/favicon.ico)
+- Chercher des films et séries via la barre de recherche
+- Filtrer les recherches par catégories et genres
+- Visualiser les infos des films de manière individuelle
+- Créer un compte
+- Laisser des commentaires et répondre à d'autres
+- Ajouter des films en favoris
 
----
 
-## Blockquotes
-Use `>` for blockquotes:
-```markdown
-> "The only limit to our realization of tomorrow is our doubts of today."  
-> – Franklin D. Roosevelt
-```
-
-> "The only limit to our realization of tomorrow is our doubts of today."  
-> – Franklin D. Roosevelt
-
----
-
-## Code Blocks
-Inline code: `` `code` ``  
-Block code:
-```markdown
-```
-Code block example
-```
-```
-
-Inline example: `print("Hello, World!")`  
-Block example:
-```python
-def greet():
-    print("Hello, World!")
-```
-
----
-
-## Tables
-Create tables using pipes `|` and dashes `-`:
-```markdown
-| Header 1 | Header 2 |
-|----------|----------|
-| Row 1    | Value 1  |
-| Row 2    | Value 2  |
-```
-
-| Header 1 | Header 2 |
-|----------|----------|
-| Row 1    | Value 1  |
-| Row 2    | Value 2  |
-
----
-
-## Horizontal Line
-Use three dashes `---` or asterisks `***`:
-```markdown
----
-```
-
----
-
-## Tasks (Checklists)
-Use `- [ ]` for unchecked or `- [x]` for checked:
-```markdown
-- [x] Completed Task
-- [ ] Incomplete Task
-```
-
-- [x] Completed Task
-- [ ] Incomplete Task
-
----
-
-## Escape Characters
-Use `\` to escape special characters:
-```markdown
-\*This text is not italicized\*
-```
-
-\*This text is not italicized\*
-
----
-
-## Footnotes
-Use `[^1]` for footnotes:
-```markdown
-Here's a sentence with a footnote.[^1]
-
-[^1]: This is the footnote.
-```
-
-Here's a sentence with a footnote.[^1]
-
-[^1]: This is the footnote.
-
----
-
-## Emojis
-Use emoji shortcodes:
-```markdown
-:smile: :rocket:
-```
-
-😄 🚀
-
----
-
-## Math (if supported)
-Use `$` for inline math or `$$` for block math:
-```markdown
-Inline math: $E = mc^2$
-Block math:
-$$
-E = mc^2
-$$
-```
-
-Inline math: $E = mc^2$  
-Block math:  
-$$
-E = mc^2
-$$
-
----
-
-## Nested Formatting
-Combine multiple formats:
-```markdown
-**Bold _and Italic_**
-~~Strikethrough *and Italic*~~
-```
-
-**Bold _and Italic_**  
-~~Strikethrough *and Italic*~~
-
----
-
-This Markdown file includes all major commands. Modify or extend it as needed!
