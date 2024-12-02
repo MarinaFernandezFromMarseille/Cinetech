@@ -32,7 +32,7 @@ CINETECH est une librairie qui répertorie un grand nombre de films et séries p
 
 ---
 
-# **COMMENT OBTENIR/CHANGER LA CLE API**
+# **COMMENT OBTENIR/CHANGER LA CLE API** 
 
 1. Créer un compte sur * TMDB* si ce n'est pas déjà fait
 2. Aller dans la section "API" de vos paramètres
