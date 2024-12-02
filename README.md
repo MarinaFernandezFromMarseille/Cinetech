@@ -19,13 +19,13 @@ CINETECH est une librairie qui répertorie un grand nombre de films et séries p
  4. Ouvrir le dossier dans VSCODE et aller dans "vendor/jadempinky/pinkyflow/config"
  5. Modifier les caractéristiques de la base de données pour y acceder: 
 
-$dbHost = 'localhost'; 
-$dbUser = 'root'; 
-$dbPass = '';
-$dbName = 'cinetech'; 
+```$dbHost = 'localhost';```
+```$dbUser = 'root';```
+```$dbPass = '';```
+```$dbName = 'cinetech';```
 
 
- 1. Tu peux aussi cloner le repo depuis ton terminal:
+ 6. Tu peux aussi cloner le repo depuis ton terminal:
 
 
   git clone https://github.com/ton-utilisateur/nom-du-repository.git
