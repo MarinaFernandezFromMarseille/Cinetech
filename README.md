@@ -27,12 +27,12 @@ CINETECH est une librairie qui répertorie un grand nombre de films et séries p
 
  6. Tu peux aussi cloner le repo depuis ton terminal:
 
-   ```bash
-  **git clone https://github.com/ton-utilisateur/nom-du-repository.git**
+
+  git clone https://github.com/ton-utilisateur/nom-du-repository.git
 
 ---
 
-# **COMMENT OBTENIR/CHANGER LA CLE API** 
+# ** COMMENT OBTENIR/CHANGER LA CLE API ** 
 
 1. Créer un compte sur * TMDB* si ce n'est pas déjà fait
 2. Aller dans la section "API" de vos paramètres
