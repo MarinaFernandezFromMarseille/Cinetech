@@ -3,7 +3,7 @@
 
 CINETECH est une librairie qui répertorie un grand nombre de films et séries par genre et catégories, ainsi que les infos propres à chaque film comme les casting, le synopsis, ect...
 
-# ** PRE-REQUIS POUR CE PROJET
+# ** PRE-REQUIS POUR CE PROJET **
 
 - LARAGON ou autre
 - Composer 
@@ -13,16 +13,16 @@ CINETECH est une librairie qui répertorie un grand nombre de films et séries p
 
 # **MARCHE A SUIVRE**
 
- 1.télécharger le repo sur Github
- 2.Unzip le dossier 
- 3.l'installer dans www dans un dossier "cinetech"
- 4.Ouvrir le dossier dans VSCODE et aller dans "vendor/jadempinky/pinkyflow/config"
- 5.Modifier les caractéristiques de la base de données pour y acceder: 
+ 1. télécharger le repo sur Github
+ 2. Unzip le dossier 
+ 3. l'installer dans www dans un dossier "cinetech"
+ 4. Ouvrir le dossier dans VSCODE et aller dans "vendor/jadempinky/pinkyflow/config"
+ 5. Modifier les caractéristiques de la base de données pour y acceder: 
 
-**$dbHost = 'localhost';**
-**$dbUser = 'root';**
-**$dbPass = '';**
-**$dbName = 'cinetech';**
+** $dbHost = 'localhost'; **
+** $dbUser = 'root'; **
+** $dbPass = ''; **
+** $dbName = 'cinetech'; **
 
 
  6. Tu peux aussi cloner le repo depuis ton terminal:
