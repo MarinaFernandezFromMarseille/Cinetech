@@ -20,13 +20,7 @@ h1 {
     text-shadow: 0 2px 4px rgba(255, 59, 59, 0.4); /* Ombre subtile rouge */
 }
 
-h2 {
-    font-size: 2em;
-    color: #ff3b3b; /* Rouge vif pour les sous-titres */
-    text-align: center;
-    margin: 1em 0;
-    text-shadow: 0 1px 3px rgba(255, 59, 59, 0.4);
-}
+
 
 /* Main container */
 .container {
@@ -103,17 +97,9 @@ h2 {
     font-weight: bold;
 }
 
-/* Links styling */
-.movie-details a {
-    color: #ff3b3b;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
 
-.movie-details a:hover {
-    color: #ff1a1a;
-}
+
+
 
 .overview-section {
     margin-top: 2em;
@@ -227,3 +213,41 @@ h2 {
 .comment-form button[type="submit"]:hover {
     background-color: #ff1a1a;
 }
+/* Chaque film */
+
+
+.similarmovies-section {
+    display: flex;
+    flex-direction: row; 
+    overflow-x: auto; 
+    padding: 2vw;
+    gap: 10vw;
+    margin: 2vw;
+    background-color: black;
+    
+  }
+  
+  .movie {
+    flex: 0 0 auto; 
+    width: 20%; 
+    margin-right: 2vw; 
+    text-align: center; 
+  }
+  
+  .movie img {
+    width: 100%; 
+    height: auto; 
+  }
+
+   a {
+  
+    color:#fff;
+    text-decoration: none;
+    font-size: small;
+ 
+  }
+  
+  h2 {
+    margin-top: 1vw;
+    margin-left: 10vw;
+  }

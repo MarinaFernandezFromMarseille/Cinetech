@@ -62,28 +62,3 @@ input {
     margin: 0 auto; /* Centrer horizontalement */
 }
 
-/* Chaque film */
-.movie {
-    text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    transition: transform 0.2s;
-}
-
-.movie:hover {
-    transform: scale(1.05); /* Agrandir légèrement au survol */
-}
-
-.movie img {
-    width: 100%; /* S'adapte à la largeur du conteneur */
-    max-width: 200px; /* Largeur maximale pour contrôler les dimensions */
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.movie p {
-    font-size: 14px;
-    margin: 0;
-}
